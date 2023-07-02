@@ -83,7 +83,7 @@ const WatchPage = () => {
 
       <MiniSidebar/>
         <div className='p-5'>
-            <iframe width="750" height="423" src={`https://www.youtube.com/embed/${id}?&autoplay=1`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe width="750" height="423" src={`https://www.youtube-nocookie.com/embed/${id}?&autoplay=1`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             
           {loadingg ? <WatchPageSkeleton/>: <>
             <h1 className='mb-2 mt-2 font-bold'>{title}</h1>
