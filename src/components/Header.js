@@ -25,9 +25,9 @@ const Header = () => {
   }
 
   const getSearchSuggestions = async () => {
-    const data = await fetch(YOUTUBE_SUGGESTIONS + searchText);
+    const data = await fetch("https://cors-anywhere.herokuapp.com/" + YOUTUBE_SUGGESTIONS + searchText);
     const json = await data.json();
-    // console.log(json);
+    console.log(json);
     setSuggestionsList(json[1]);
   }
 

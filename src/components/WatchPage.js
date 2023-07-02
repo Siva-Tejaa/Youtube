@@ -120,12 +120,12 @@ const WatchPage = () => {
           
           {
             relatedVideos.map((video) => (
-       <div className='m-2  w-[17rem]' key={video.id.videoId}>
-        <Link to={`/watch/${video.id.videoId}`}><img src={video?.snippet?.thumbnails.medium.url} alt="Video Thumbnail" className='rounded-lg mb-2'/></Link>
+       <div className='m-2  w-[17rem]' key={video?.id?.videoId}>
+        <Link to={`/watch/${video?.id?.videoId}`}><img src={video?.snippet?.thumbnails?.medium?.url} alt="Video Thumbnail" className='rounded-lg mb-2'/></Link>
         <div className='flex'>
         <Link to={`/channel/${video?.snippet?.channelId}`}><img src={"https://api.multiavatar.com/"+ video?.snippet?.channelTitle.trim() +".svg?apikey=RIsT0Wt1q3cXVC"} className='rounded-full h-8 w-8 mr-2'/></Link>
           <div>
-          <Link to={`/watch/${video.id.videoId}`}><h1 className='text-sm font-medium mb-1' style={st} title={video?.snippet?.title}>{video?.snippet?.title}</h1></Link>
+          <Link to={`/watch/${video?.id?.videoId}`}><h1 className='text-sm font-medium mb-1' style={st} title={video?.snippet?.title}>{video?.snippet?.title}</h1></Link>
           <Link to={`/channel/${video?.snippet?.channelId}`}><p className='text-xs text-gray-500' title={video?.snippet?.channelTitle}>{video?.snippet?.channelTitle}</p></Link>
              {/* <p className='text-xs text-gray-500'>{video?.statistics?.viewCount} views | {video?.statistics?.publishedAt.substring(0, 10)}</p> */}
           </div>
