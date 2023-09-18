@@ -34,14 +34,14 @@ const Button = () => {
   return (
     <div className=''>
 
-<Carousel itemPadding={[0, 0]} itemsToShow={5} outerSpacing={5} pagination={false} itemsToScroll={2}>
+{/* <Carousel itemPadding={[0, 0]} itemsToShow={5} outerSpacing={5} pagination={false} itemsToScroll={2}>
       {
         category.map((categ, index) => (
             // <button className="px-3 py-2 m-1 max-w-fit  bg-gray-200 rounded-lg" key={index}>{categ?.snippet?.title}</button>
             <button className="px-3 py-2 m-1 w-52 whitespace-nowrap bg-gray-200 rounded-lg" key={index}>{categ?.snippet?.title}</button>
         ))
         }
-        </Carousel>
+        </Carousel> */}
   
 
         
