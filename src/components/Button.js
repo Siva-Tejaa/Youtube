@@ -2,7 +2,7 @@ import React,{useState, useEffect} from 'react'
 import { YOUTUBE_VIDEO_CATEGORY } from '../api/Api';
 
 
-import Carousel from 'react-elastic-carousel';
+// import Carousel from 'react-elastic-carousel';
 
 
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
