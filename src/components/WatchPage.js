@@ -83,7 +83,7 @@ const WatchPage = () => {
 
       <MiniSidebar/>
         <div className='p-5'>
-            <iframe width="750" height="423" src={`https://www.youtube-nocookie.com/embed/${id}?&autoplay=1`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe width="750" height="423" className='rounded-3xl' src={`https://www.youtube-nocookie.com/embed/${id}?&autoplay=1`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             
           {loadingg ? <WatchPageSkeleton/>: <>
             <h1 className='mb-2 mt-2 font-bold'>{title}</h1>
@@ -114,9 +114,9 @@ const WatchPage = () => {
             </div>
             </>}
         </div>
-        <div className='p-4'>
-          <p className='font-bold'>Related Videos</p>
-          {loading && Array(5).fill("").map((ar) =><VideoCardSkeleton key={Math.random()}/>)}
+        {/* <div className='p-4'> */}
+          {/* <p className='font-bold'>Related Videos</p> */}
+          {/* {loading && Array(5).fill("").map((ar) =><VideoCardSkeleton key={Math.random()}/>)}
           
           {
             relatedVideos.map((video) => (
@@ -127,7 +127,6 @@ const WatchPage = () => {
           <div>
           <Link to={`/watch/${video?.id?.videoId}`}><h1 className='text-sm font-medium mb-1' style={st} title={video?.snippet?.title}>{video?.snippet?.title}</h1></Link>
           <Link to={`/channel/${video?.snippet?.channelId}`}><p className='text-xs text-gray-500' title={video?.snippet?.channelTitle}>{video?.snippet?.channelTitle}</p></Link>
-             {/* <p className='text-xs text-gray-500'>{video?.statistics?.viewCount} views | {video?.statistics?.publishedAt.substring(0, 10)}</p> */}
           </div>
         </div>
         
@@ -135,8 +134,8 @@ const WatchPage = () => {
 
     
             ))
-          }
-        </div>
+          } */}
+        {/* </div> */}
     </div>
   )
 }
